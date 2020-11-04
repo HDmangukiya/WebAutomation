@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: kiwisaver.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.924 sec <<< FAILURE!
+When the User Clicks on information icon besides Current age the message related to Current age is displayed.(Provide User with correct information related to Calculator fields)  Time elapsed: 11.402 sec  <<< ERROR!
+io.cucumber.java.PendingException: TODO: implement me
+	at kiwisaver.StepDefinitions.i_select_from_main_menu(StepDefinitions.java:36)
+	at ✽.I select "KiwiSaver Calculators" from "KiwiSaver" main menu(classpath:kiwisaver/calculator_ui.feature:7)
+
