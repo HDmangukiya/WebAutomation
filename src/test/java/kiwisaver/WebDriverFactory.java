@@ -5,9 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverFactory {
+	
+	public static final String WEBDRIVER_PATH = "c:\\webdrivers\\chromedriver\\chromedriver.exe";
 
 	public static WebDriver createWebDriver() {
-	    System.setProperty("webdriver.chrome.driver", "/Users/Modviron/.jmodviron/webdrivers/chromedriver/chromedriver");
+	    System.setProperty("webdriver.chrome.driver", WEBDRIVER_PATH);
         String webdriver = System.getProperty("browser", "chrome");
         switch(webdriver) {
             case "firefox":

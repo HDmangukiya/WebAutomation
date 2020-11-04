@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="kiwisaver.RunCucumberTest" time="11.402" errors="1" skipped="0">
+<testsuite tests="1" failures="1" name="kiwisaver.RunCucumberTest" time="12.88" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre/lib"/>
@@ -64,20 +64,24 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Provide User with correct information related to Calculator fields" name="When the User Clicks on information icon besides Current age the message related to Current age is displayed." time="11.402">
-    <error message="TODO: implement me" type="io.cucumber.java.PendingException">io.cucumber.java.PendingException: TODO: implement me
-	at kiwisaver.StepDefinitions.i_select_from_main_menu(StepDefinitions.java:36)
-	at ✽.I select &quot;KiwiSaver Calculators&quot; from &quot;KiwiSaver&quot; main menu(classpath:kiwisaver/calculator_ui.feature:7)
-</error>
+  <testcase classname="Provide User with correct information related to Calculator fields" name="When the User Clicks on information icon besides Current age the message related to Current age is displayed." time="12.88">
+    <failure message="Fail to load page" type="java.lang.AssertionError">java.lang.AssertionError: Fail to load page
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at kiwisaver.StepDefinitions.the_page_loads(StepDefinitions.java:63)
+	at ✽.the &quot;KiwiSaver Calculators&quot; page loads(classpath:kiwisaver/calculator_ui.feature:8)
+</failure>
     <system-out>
 Scenario: When the User Clicks on information icon besides Current age the message related to Current age is displayed. &amp;#27;[90m# kiwisaver/calculator_ui.feature:5&amp;#27;[0m
   &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI navigate to Westpac Home Page&amp;#27;[0m                                                                                 &amp;#27;[90m# kiwisaver.StepDefinitions.i_navigate_to_westpac_home_page()&amp;#27;[0m
-  &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI select &amp;#27;[0m&amp;#27;[33m&amp;#27;[1m&quot;KiwiSaver Calculators&quot;&amp;#27;[0m&amp;#27;[33m from &amp;#27;[0m&amp;#27;[33m&amp;#27;[1m&quot;KiwiSaver&quot;&amp;#27;[0m&amp;#27;[33m main menu&amp;#27;[0m                                                       &amp;#27;[90m# kiwisaver.StepDefinitions.i_select_from_main_menu(java.lang.String,java.lang.String)&amp;#27;[0m
-      &amp;#27;[33mio.cucumber.java.PendingException: TODO: implement me
-	at kiwisaver.StepDefinitions.i_select_from_main_menu(StepDefinitions.java:36)
-	at ✽.I select &quot;KiwiSaver Calculators&quot; from &quot;KiwiSaver&quot; main menu(classpath:kiwisaver/calculator_ui.feature:7)
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI select &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;KiwiSaver Calculators&quot;&amp;#27;[0m&amp;#27;[32m from &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;KiwiSaver&quot;&amp;#27;[0m&amp;#27;[32m main menu&amp;#27;[0m                                                       &amp;#27;[90m# kiwisaver.StepDefinitions.i_select_from_main_menu(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mthe &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;KiwiSaver Calculators&quot;&amp;#27;[0m&amp;#27;[31m page loads&amp;#27;[0m                                                                           &amp;#27;[90m# kiwisaver.StepDefinitions.the_page_loads(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: Fail to load page
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at kiwisaver.StepDefinitions.the_page_loads(StepDefinitions.java:63)
+	at ✽.the &quot;KiwiSaver Calculators&quot; page loads(classpath:kiwisaver/calculator_ui.feature:8)
 &amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mthe &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;KiwiSaver Calculators&quot;&amp;#27;[0m&amp;#27;[36m page loads&amp;#27;[0m                                                                           &amp;#27;[90m# kiwisaver.StepDefinitions.the_page_loads(java.lang.String)&amp;#27;[0m
   &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Click here to get started.&quot;&amp;#27;[0m                                                                           &amp;#27;[90m# kiwisaver.StepDefinitions.i_click_on(java.lang.String)&amp;#27;[0m
   &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mthe &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;KiwiSaver Retirement Calculator&quot;&amp;#27;[0m&amp;#27;[36m page loads&amp;#27;[0m                                                                 &amp;#27;[90m# kiwisaver.StepDefinitions.the_page_loads(java.lang.String)&amp;#27;[0m
   &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on information icon besides &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Current age&quot;&amp;#27;[0m&amp;#27;[36m field&amp;#27;[0m                                                           &amp;#27;[90m# kiwisaver.StepDefinitions.i_click_on_information_icon_besides_field(java.lang.String)&amp;#27;[0m
@@ -86,11 +90,11 @@ Scenario: When the User Clicks on information icon besides Current age the messa
     <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 35800
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 2605
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 04, 2020 9:11:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 05, 2020 12:45:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
