@@ -69,5 +69,6 @@ Type the following to run **_Test User Story 1_**
     mvn clean test
 ```
 
+![alt text](https://github.com/HDmangukiya/WebAutomation/blob/main/screenshots/Estimated_Balance_20240313_140439.png)
 
 
