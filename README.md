@@ -44,7 +44,7 @@ Setup Instructions
 
 3. Clone project in a working folder via the following command:
     ```console
-    git clone https://github.com/blueflamer/westpac-kiwisaver-java.git
+    [git clone https://github.com/blueflamer/westpac-kiwisaver-java.git](https://github.com/HDmangukiya/WebAutomation)
     ```
 
 4. Navigate to Project Directory:
